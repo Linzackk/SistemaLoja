@@ -1,11 +1,14 @@
 from time import sleep
 
-from sistemaLoja.lib.arquivo import *
+from lib.arquivo import *
 tipos = [
     'Pães',
     'Salgados',
     'Doces',
-    'Bebidas'
+    'Bebidas',
+    'Roupas',
+    'Sapatos',
+
 ]
 def leiaFloat(msg):
     """

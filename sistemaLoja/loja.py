@@ -1,5 +1,5 @@
-from sistemaLoja.lib.interface import *
-from sistemaLoja.lib.arquivo import *
+from lib.interface import *
+from lib.arquivo import *
 
 # Interface da Loja
 
@@ -22,18 +22,12 @@ while True:
     linha()
 
     # Recebe a interação do Usuário apenas aceitando os valores possíveis.
-    e = (escolha(len(tipos ) - 1))
+    e = (escolha(len(tipos )))
 
     # Mostra na Tela o Conteúdo dependendo da interação do Usuário.
-    if e == 4:
+    if e == len(tipos) - 1:
         break
-    if e == 0:
-        lerArq(tipos[0])
-    if e == 1:
-        lerArq(tipos[1])
-    if e == 2:
-        lerArq(tipos[2])
-    if e == 3:
-        lerArq(tipos[3])
+    else:
+        lerArq(tipos[e])
 
 print('\033[1;31mFIM\033[m')

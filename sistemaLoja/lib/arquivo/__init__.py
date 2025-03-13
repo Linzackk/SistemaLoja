@@ -39,12 +39,13 @@ def escolha(n=0):
     while True:
         e = input()
         if e.isnumeric():
-            if int(e) > n or int(e) < 0:
+            if int(e) > n - 1 or int(e) < 0:
                 print(f'\033[1;31m{e} NÃO É VÁLIDO!\033[m')
             else:
                 break
         else:
             print(f'\033[1;31m{e} NÃO É VÁLIDO!\033[m')
     return int(e)
+
 
 #def listagem(msg):
